@@ -1,0 +1,113 @@
+body{
+  margin: 0;
+}
+
+header{
+  color: crimson;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.9em;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+nav{
+  background-color: crimson;
+  position: sticky;
+  top: 0;
+}
+
+nav ul{
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+}
+
+nav ul li{
+  padding: 10px 20px;
+  margin: 0 20px;
+  list-style: none;
+  cursor: pointer;
+}
+
+nav ul li a{
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#content{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 85vw;
+}
+
+#menu{
+  flex-basis: 180px;
+  background-color: grey;
+}
+
+#menu ul{
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  position: sticky;
+  top:3rem;
+}
+
+#menu ul li{
+  text-align: center;
+  padding: 22px 22px 22px 22px;
+  cursor: pointer;
+}
+
+#menu ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+#information{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  flex-grow: 1;
+  margin-left: 80px;
+}
+
+#information h1{
+  font-size: 2.0em;
+  padding: 10px;
+}
+
+#T1 h1{
+  color: rgb(169, 25, 54);
+}
+
+#GenG h1{
+  color: rgb(150, 91, 19);
+}
+
+#DRX h1{
+  color: rgb(39, 12,159);
+}
+
+#information section{
+  padding-top: 30px;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  background-color: rgb(25, 1, 1);
+}
+
+footer>h1{
+  margin: 0;
+  padding: 22px;
+  font-size: 1.0rem;
+  text-align: center;
+  color: white;
+}

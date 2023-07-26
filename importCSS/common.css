@@ -1,0 +1,14 @@
+:root{
+  --font-w-bold: 900;
+  --font-w-normal: 500;
+  --font-w-light: 300;
+
+  --color-main: rgb(25, 85, 169);
+  --color-sub: skyblue;
+  --color-point: crimson;
+}
+
+.fruit{
+  --coloring-f: orange;
+}
+

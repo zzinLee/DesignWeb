@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./selector.css">
+  <title>가상클래스</title>
+</head>
+<body>
+  <h1>가상 클래스 1</h1>
+  <p class="mouseAndClick">
+    <a href="#">마우스 오버 시와 클릭중 배경색이 변합니다.</a>
+  </p>
+  
+  <br><br>
+
+  <form name="optionChecking" action="#" method="get">
+    <input name="option" type="radio" id="option_1" value="opt1">
+    <label for="option_1">옵션1</label>
+    <input name="option" type="radio" id="option_2" value="opt2">
+    <label for="option_2">옵션2</label>
+    <input name="option" type="radio" id="option_3" value="opt3">
+    <label for="option_3">옵션3</label>
+    <input name="option" type="radio" id="option_4" value="opt4" disabled>
+    <label for="option_4" aria-disabled="true">옵션4</label>
+  </form>
+  <br>
+  <hr>
+  <br>
+  <h1>가상 클래스2</h1>
+  <div class="textInput">
+    <label for="normal">일반</label>
+    <input id="normal" type="text">
+    <br>
+    <label for="essential">필수</label>
+    <input id="essential" type="text" required>
+    <br>
+    <label for="condition">조건</label>
+    <input id="condition" type="email" placeholder="이메일 주소">
+    <br>
+  </div>
+    <br><br>
+  <div class="buttonInput">
+    <button class="all-focus">클릭과 탭 모두 포커스 표시</button>
+    <input type="checkbox" id="cb5" class="all-focus"><label for="cb5">체크</label>
+    <br>
+    <button class="no-focus">포커스를 표시하지 않음</button>
+    <input type="checkbox" id="cb6" class="no-focus"><label for="cb6">체크</label>
+    <br>
+    <button class="tab-focus">탭으로 선택시만 포커스 표시</button>
+    <input type="checkbox" id="cb7" class="tab-focus"><label for="cb7">체크</label>
+  </div>
+  <br><br>
+  <hr>
+  <br>
+  <h1>가상 클래스3</h1>
+  <br>
+  <div>
+    <i>아이요소</i>
+    <b>비요소</b>
+    <b>비요소</b>
+    <i>아이요소</i>
+    <em>em요소</em>
+    <b>비요소</b>
+    <i>아이요소</i>
+    <i>아이요소</i>
+    <b>비요소</b>
+  </div>
+  <br>
+  <div>
+    <span> 나혼자 spannnnn </span>
+  </div>
+  <br><br><br>
+
+  <h1>가상요소</h1>
+  <h2>웹 개발 주요 언어</h2>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li class="later">JavaScript</li>
+  </ul>
+  <br>
+  <p>
+    이 문단을 드래그해서 선택해보세요.<br>
+    <span class="orange">이 부분은 오렌지색 배경으로,</span>
+    <span class="dark">이 부분은 다크한 테마로</span>선택영역에 보여지게 될 것입니다.
+  </p>
+  <br>
+  <input id="ttt" type="text" required placeholder="이 칸을 비우지 마세요!">
+  <br><br><br>
+</body>
+</html>

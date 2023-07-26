@@ -1,0 +1,56 @@
+@import url(./common.css);
+
+body{
+  font-weight: var(--font-w-light);
+  color: var(--color-main);
+}
+
+#title{
+  font-weight: var(--font-w-bold);
+}
+
+.hyperlink{
+  font-weight: var(--font-w-normal);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+label{
+  margin-right: 18px;
+}
+
+legend{
+  color: var(--color-point);
+  background-color: lavender;
+}
+
+fieldset{
+  display: block;
+  border: 2px lavender solid;
+}
+
+.fruitandvegetable *{
+  background-color: var(--coloring-f);
+}
+
+/* 추가 선택자들 학습해보자! */
+a[href="https://www.yalco.kr/"] {
+  color: var(--color-point);
+  text-decoration: underline;
+}
+
+input[disabled]+label {
+  color: tomato;
+  text-decoration: line-through;
+}
+
+span[class^="fruit"]{
+  color: white;
+}
+span[class*="item"]{
+  text-decoration: green wavy underline;
+}
+
+span[class$="1"]{
+  font-weight: var(--font-w-bold);
+}

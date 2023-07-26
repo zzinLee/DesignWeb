@@ -1,0 +1,158 @@
+body{
+  padding: 20px;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 2rem;
+  color: #aaa;
+}
+
+h2{
+  font-weight: bold;
+  font-size:1.2rem;
+  color: rgb(147, 56, 147);
+}
+
+a{
+  color: dodgerblue;
+}
+
+a:hover{
+  color: white;
+  background-color: dodgerblue;
+}
+
+/* 마우스 클릭시 active */
+a:active{
+  color: dodgerblue;
+  background-color: yellow;
+}
+
+input[type="radio"]+label{
+  margin-right: 20px;
+}
+
+input[type="radio"]:checked+label{
+  color: dodgerblue;
+  font-weight: bold;
+}
+
+input[type="radio"]:enabled+label{
+  text-decoration: 1px wavy tomato underline;
+}
+
+input[type="radio"]:disabled+label{
+  color: #eee;
+  text-decoration: 1px solid black line-through;
+}
+
+.textInput label{
+  margin: 0 1em 0 0.2em;
+}
+
+.textInput input[type="text"], .textInput input[type="email"]{
+  border: 2px solid #ccc;
+  padding: 3px;
+}
+
+.textInput input[type="text"]:focus{
+  outline: 2px solid hotpink;
+}
+
+input[type="text"]:required:not(#ttt){
+  border-color: tomato;
+}
+
+input[type="email"]:valid{
+  border-color: green;
+}
+input[type="email"]:not(:valid){
+  border-color: tomato;
+}
+
+/*일단 전체 포커스 아웃라인을 잡고*/
+[class*="focus"]:focus{
+  outline: 2px solid deeppink;
+}
+/*탭 노포커싱 그룹은 또 없애주고*/
+.tab-focus:focus, .no-focus:focus{
+  outline: none;
+}
+/*탭 포커싱그룹에서 탭할때 생기게 해줘야한다.*/
+[class *= "tab-focus"]:focus-visible{
+  outline: 2px solid hotpink;
+}
+
+i{
+  color: tomato;
+}
+
+b{
+  color: dodgerblue;
+}
+
+b:nth-of-type(2){
+  text-decoration: 2px wavy olive overline;
+}
+
+i:last-of-type{
+  text-decoration: 3px olive line-through;
+}
+
+div :only-of-type{
+  text-decoration: olive 1px wavy underline;
+}
+
+div :only-child{
+  color: palevioletred;
+}
+
+/*!가상요소!*/
+
+/*뒤에 추가 ::after */
+
+li.later::after{
+  content: '다음 강좌';
+  margin-left: 0.8em;
+  padding: 0.12em 0.32em;
+  font-size: 0.7em;
+  color: white;
+  background-color: purple;
+  border-radius: 0.3em;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+/*앞에 추가 ::before*/
+
+li::before{
+  content: '';
+  display: inline-block;
+  margin: 0 0.4em;
+  width: 0.8em;
+  height: 0.8em;
+  background-image: url(./image/check.png);
+  background-size: contain;
+}
+
+/* 드래그 할 떄 selection이라고 함!!!*/
+
+span.orange::selection{
+  background-color: orange;
+}
+
+span.dark::selection{
+  background-color: black;
+  color: plum;
+}
+
+#ttt::placeholder{
+  background-color: yellow;
+  color:darkred;
+}

@@ -1,0 +1,82 @@
+body{
+  margin: 0;
+}
+
+div#container{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/*헤더*/
+header{
+  display: flex;
+  flex-direction:row;
+  align-items: flex-end;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  background-color: darkblue;
+}
+
+
+#navlist{
+  flex-grow: 1;
+  display: flex;
+  flex-direction:row;
+  margin-left: 20px;
+}
+
+nav{
+  display: flex;
+  padding: 20px;
+  cursor: pointer;
+}
+
+
+nav:hover{
+  font-weight: 800;
+  color:greenyellow;
+}
+
+/*컨텐츠*/
+main{
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content>button{
+  background-color: black;
+  color: white;
+  font-weight: 200;
+  font-size: 20px;
+  border: 0;
+  cursor: pointer;
+}
+
+.content>button:hover{
+  font-weight: 800;
+  color:rgb(203, 244, 54);
+}
+
+
+/*푸터*/
+footer{
+  box-sizing: border-box;
+  flex-basis: 10%;
+  padding: 12px;
+  text-align: center;
+  color: rgb(247, 251, 239);
+  background-color: rgba(164, 203, 23);
+}
